@@ -7,7 +7,7 @@ namespace BankEncapsulation
         static void Main(string[] args)
         {
            
-            var bankAccount = new BankAccount();
+            var bankAccount = new BankAccount(100);
             Console.Write("How much would you like to deposit? :$");
             double amount = double.Parse(Console.ReadLine());
             bankAccount.Deposit(amount);
